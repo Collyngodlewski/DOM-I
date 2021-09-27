@@ -133,3 +133,24 @@ email.textContent = siteContent['contact']['email'];
 const footer = document.querySelector('footer p');
 footer.textContent = siteContent['footer']['copyright'];
 
+// Changing color
+nav1.style.color = 'green';
+nav2.style.color = 'green';
+nav3.style.color = 'green';
+nav4.style.color = 'green';
+nav5.style.color = 'green';
+nav6.style.color = 'green';
+
+
+// Creating new elements
+
+const blog = document.createElement('a');
+blog.textContent = 'Blog';
+blog.href = '#';
+document.querySelector('nav').appendChild(blog);
+blog.style.color = 'green';
+
+const youtube = document.createElement('a');
+youtube.textContent = 'Youtube';
+youtube.href = '#';
+youtube.prepend("Youtube", '#');
